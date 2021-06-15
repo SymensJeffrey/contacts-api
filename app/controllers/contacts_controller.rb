@@ -16,4 +16,10 @@ class ContactsController < ApplicationController
 
     render json: contact3
   end
+
+  def show_second_contact
+    contact2 = Contact.second 
+
+    render json: contact2
+  end
 end
