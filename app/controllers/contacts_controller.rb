@@ -4,7 +4,8 @@ class ContactsController < ApplicationController
     render json: contacts
   end
 
-  def show
+  def create
+
     render json: {message: "hellp"}
   end
 end
