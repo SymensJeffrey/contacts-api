@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   def index
-    render json: {message: "hello"}
+    contacts = Contact.all
+    render json: contacts
   end
 end
