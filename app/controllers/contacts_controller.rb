@@ -3,4 +3,8 @@ class ContactsController < ApplicationController
     contacts = Contact.all
     render json: contacts
   end
+
+  def show
+    render json: {message: "hellp"}
+  end
 end
